@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    ".tree-view .file .name[data-name$=\\.js]": [
+      {
+        "label": "Rename (with refactor support)",
+        "command": "atom-refactoring-codemods:refactor"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atom-refactoring-codemods",
+          "submenu": [
+            {
+              "label": "Rename (with refactor support)",
+              "command": "atom-refactoring-codemods:refactor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
