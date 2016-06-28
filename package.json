@@ -13,9 +13,9 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "jscodeshift": "^0.3.20",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
     "react-for-atom": "^15.0.2-1"
-  }
+  },
+  "devDependencies": {}
 }
