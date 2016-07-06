@@ -1,9 +1,16 @@
 {
   "name": "atom-refactoring-codemods",
   "main": "./lib/atom-refactoring-codemods",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Refactoring support for Atom",
-  "keywords": ["refactoring", "refactor", "codemode", "jscodeshift", "js-codemod", "rename"],
+  "keywords": [
+    "refactoring",
+    "refactor",
+    "codemode",
+    "jscodeshift",
+    "js-codemod",
+    "rename"
+  ],
   "activationCommands": {
     "atom-workspace": "atom-refactoring-codemods:refactor"
   },
