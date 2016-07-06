@@ -1,6 +1,6 @@
 # atom-refactoring-codemods package
 
-This Atom package is a work in progress. The goal is to provide refactoring support to Atom, during file rename, file | directory move, export rename.
+This Atom package is a work in progress. The goal is to provide refactoring support to Atom, during file rename, file or directory move, and renaming an files exported module.
 
 The UI is a work in progress, all critiques are welcome - please read the _Contribute_ section below if you are interested in making this plugin better.
 
@@ -12,7 +12,7 @@ _**NOTE:** Currently, the **root folder** is set via the settings of this packag
 
 #### How it all works
 
-__atom-refactoring-codemods__ is a UI plugin that executes jscodeshift codemods in memory. I've written 2 [refactoring-codemods](https://github.com/jurassix/refactoring-codemods) that do the heavy lifting of building the AST and updating the sources to match .
+__atom-refactoring-codemods__ is a UI plugin that executes jscodeshift codemods in memory. I've written 2 [refactoring-codemods](https://github.com/jurassix/refactoring-codemods) that do the heavy lifting of building the AST and updating the sources to match.
 
 __import-declaration-transform__ updates all dependent _import/require_ __paths__ when a file has been renamed/moved. This codemod takes the _previousPath_ and _newPath_ of the file and then all dependent _import/require_ paths will be updated to match the new file name/location.
 
@@ -65,5 +65,5 @@ apm i atom-refactoring-codemods
 ```
 
 ### Contribute
-- please open an Issue before submitting a PR
-- all PR's should be accompanied wth tests
+- Please open an [issue](https://github.com/jurassix/atom-refactoring-codemods/issues) before submitting a PR
+- All PR's should be accompanied wth tests :rocket:
