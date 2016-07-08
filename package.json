@@ -1,7 +1,7 @@
 {
   "name": "atom-refactoring-codemods",
   "main": "./lib/atom-refactoring-codemods",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Refactoring support for Atom",
   "keywords": [
     "refactoring",
@@ -52,12 +52,15 @@
       "atom": false
     },
     "rules": {
-      "import/no-unresolved": [2, {
-        "commonjs": true,
-        "ignore": [
-          "atom"
-        ]
-      }]
+      "import/no-unresolved": [
+        2,
+        {
+          "commonjs": true,
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
     }
   }
 }
