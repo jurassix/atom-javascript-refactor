@@ -1,6 +1,6 @@
 'use babel';
 
-import PathRenameForm from '../lib/PathRenameForm';
+import PathRenameForm from '../lib/components/PathRenameForm';
 
 describe('PathRenameForm', () => {
   it('has one valid test', () => {
