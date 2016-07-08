@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/jurassix/atom-refactoring-codemods.git"
   },
-  "author": "clint ayres (clinton.ayres@gmail.com)",
+  "author": "clint ayres <clinton.ayres@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jurassix/atom-refactoring-codemods/issues"
@@ -34,5 +34,30 @@
     "react-for-atom": "^15.0.2-1",
     "refactoring-codemods": "0.0."
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^6.1.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2"
+  },
+  "scripts": {
+    "test": "eslint ."
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "globals": {
+      "atom": false
+    },
+    "rules": {
+      "import/no-unresolved": [2, {
+        "commonjs": true,
+        "ignore": [
+          "atom"
+        ]
+      }]
+    }
+  }
 }
