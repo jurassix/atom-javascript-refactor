@@ -2,7 +2,7 @@
 
 ## JavaScript refactoring support for Atom
 
-This package allows you to rename a file and have all internal relative imports/requires paths be updated to new location (if moved to a new dir) and all dependent files in your projects imports/requires be updated with you new file path.
+This package allows you to rename a file and have all internal relative imports/requires paths be updated to new location (if moved to a new dir) and all dependent files in your projects imports/requires be updated with your new file path.
 
 This Atom package is a work in progress. The goal is to provide refactoring support to Atom, during file rename, file or directory move, and renaming of exported module.
 
