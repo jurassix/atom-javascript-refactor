@@ -14,6 +14,13 @@
   "activationCommands": {
     "atom-workspace": "atom-refactoring-codemods:refactor"
   },
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jurassix/atom-refactoring-codemods.git"
@@ -29,9 +36,11 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "core-decorators": "^0.12.3",
     "fs-plus": "^2.9.1",
     "jscodeshift": "^0.3.20",
     "react-for-atom": "^15.0.2-1",
+    "redux": "^3.5.2",
     "refactoring-codemods": "0.0.9"
   },
   "devDependencies": {
