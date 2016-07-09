@@ -6,7 +6,7 @@
   "keywords": [
     "refactoring",
     "refactor",
-    "codemode",
+    "codemod",
     "jscodeshift",
     "js-codemod",
     "rename"
