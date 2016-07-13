@@ -1,6 +1,6 @@
 {
   "context-menu": {
-    ".tree-view .file .name[data-name$=\\.js]": [
+    ".tree-view .file, .tree-view .directory": [
       {
         "label": "Rename (with refactor support)",
         "command": "atom-refactoring-codemods:refactor"
