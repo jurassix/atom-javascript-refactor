@@ -4,5 +4,8 @@
 [include]
 
 [libs]
+./node_modules/nuclide/pkg/nuclide-external-interfaces/1.0/
+./lib/interfaces/
 
 [options]
+esproposal.decorators=ignore
