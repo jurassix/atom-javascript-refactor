@@ -44,15 +44,41 @@
     "refactoring-codemods": "0.0.9"
   },
   "devDependencies": {
+    "ava": "^0.15.2",
     "babel-eslint": "^6.1.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
     "eslint": "^2.13.1",
     "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-flow-vars": "^0.4.0",
     "eslint-plugin-import": "^1.10.2",
     "eslint-plugin-jsx-a11y": "^1.5.5",
-    "eslint-plugin-react": "^5.2.2"
+    "eslint-plugin-react": "^5.2.2",
+    "nuclide": "^0.150.0"
   },
   "scripts": {
-    "test": "eslint ."
+    "test": "npm run test:flow && npm run test:lint && npm run test:unit",
+    "test:flow": "flow check",
+    "test:lint": "eslint .",
+    "test:unit": "ava"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "plugins": [
+      "transform-decorators-legacy"
+    ],
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ]
   },
   "eslintConfig": {
     "extends": "airbnb",
@@ -60,7 +86,12 @@
     "globals": {
       "atom": false
     },
+    "plugins": [
+      "flow-vars"
+    ],
     "rules": {
+      "flow-vars/define-flow-type": 1,
+      "flow-vars/use-flow-type": 1,
       "import/no-unresolved": [
         2,
         {
