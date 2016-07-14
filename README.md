@@ -1,5 +1,7 @@
 # atom-refactoring-codemods package
 
+[![Build Status](https://travis-ci.org/jurassix/atom-refactoring-codemods.svg?branch=master)](https://travis-ci.org/jurassix/atom-refactoring-codemods)
+
 ## JavaScript refactoring support for Atom
 
 This package allows you to rename a file and have all internal relative imports/requires paths be updated to new location (if moved to a new dir) and all dependent files in your projects imports/requires be updated with your new file path.
