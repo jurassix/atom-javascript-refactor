@@ -1,6 +1,7 @@
 # atom-refactoring-codemods package
 
 [![Build Status](https://travis-ci.org/jurassix/atom-refactoring-codemods.svg?branch=master)](https://travis-ci.org/jurassix/atom-refactoring-codemods)
+[![Dependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods)
 
 ## JavaScript refactoring support for Atom
 
