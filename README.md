@@ -53,7 +53,7 @@ fooPrime();
 
 #### Progress
 - [x] Single File Rename with refactors
-- [ ] Directory Rename with refactors
+- [x] Directory Rename with refactors
 - [ ] Export Rename with refactors
 - [ ] Interactive Mode - show a panel with all refactors possible let user select/deselect files to update
 
