@@ -41,7 +41,7 @@
     "jscodeshift": "^0.3.20",
     "react-for-atom": "^15.0.2-1",
     "redux": "^3.5.2",
-    "refactoring-codemods": "0.0.9"
+    "refactoring-codemods": "0.1.0"
   },
   "devDependencies": {
     "ava": "^0.15.2",
