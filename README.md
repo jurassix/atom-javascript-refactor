@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jurassix/atom-refactoring-codemods.svg?branch=master)](https://travis-ci.org/jurassix/atom-refactoring-codemods)
 [![Dependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods)
+[![devDependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods/dev-status.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods#info=devDependencies)
 
 ## JavaScript refactoring support for Atom
 
