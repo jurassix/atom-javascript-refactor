@@ -51,6 +51,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.9.0",
+    "coveralls": "^2.11.11",
     "eslint": "^3.0.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-flow-vars": "^0.4.0",
@@ -58,13 +59,14 @@
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^5.2.2",
     "flow-bin": "^0.29.0",
-    "nuclide": "^0.156.0"
+    "nuclide": "^0.156.0",
+    "nyc": "^7.0.0"
   },
   "scripts": {
     "test": "npm run test:flow && npm run test:lint && npm run test:unit",
     "test:flow": "flow check",
     "test:lint": "eslint .",
-    "test:unit": "ava"
+    "test:unit": "nyc ava"
   },
   "ava": {
     "require": [
@@ -79,7 +81,12 @@
       "es2015",
       "stage-0",
       "react"
-    ]
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
   },
   "eslintConfig": {
     "extends": "airbnb",

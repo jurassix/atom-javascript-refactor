@@ -1,6 +1,7 @@
 # atom-refactoring-codemods package
 
 [![Build Status](https://travis-ci.org/jurassix/atom-refactoring-codemods.svg?branch=master)](https://travis-ci.org/jurassix/atom-refactoring-codemods)
+[![Coverage Status](https://img.shields.io/coveralls/jurassix/atom-refactoring-codemods/master.svg)](https://coveralls.io/github/jurassix/atom-refactoring-codemods?branch=master)
 [![Dependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods)
 [![devDependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods/dev-status.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods#info=devDependencies)
 
