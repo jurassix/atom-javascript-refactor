@@ -59,7 +59,7 @@
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^5.2.2",
     "flow-bin": "^0.29.0",
-    "nuclide": "^0.156.0",
+    "nuclide": "^0.157.0",
     "nyc": "^7.0.0"
   },
   "scripts": {
