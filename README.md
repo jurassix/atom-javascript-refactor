@@ -53,12 +53,6 @@ import fooPrime from './bar';
 fooPrime();
  ```
 
-#### Progress
-- [x] Single File Rename with refactors
-- [x] Directory Rename with refactors
-- [ ] Export Rename with refactors
-- [ ] Interactive Mode - show a panel with all refactors possible let user select/deselect files to update
-
 ### Install
 ```
 apm i atom-refactoring-codemods
