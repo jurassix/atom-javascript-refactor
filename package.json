@@ -54,6 +54,7 @@
     "coveralls": "^2.11.11",
     "eslint": "^3.2.2",
     "eslint-config-airbnb": "^10.0.0",
+    "eslint-plugin-babel": "^3.3.0",
     "eslint-plugin-flow-vars": "^0.5.0",
     "eslint-plugin-import": "^1.10.2",
     "eslint-plugin-jsx-a11y": "^2.0.1",
@@ -89,17 +90,30 @@
     }
   },
   "eslintConfig": {
+    "env": {
+      "browser": true
+    },
     "extends": "airbnb",
     "parser": "babel-eslint",
     "globals": {
       "atom": false
     },
     "plugins": [
+      "babel",
       "flow-vars"
     ],
     "rules": {
+      "babel/generator-star-spacing": [
+        2,
+        {
+          "before": false,
+          "after": true
+        }
+      ],
       "flow-vars/define-flow-type": 1,
       "flow-vars/use-flow-type": 1,
+      "generator-star-spacing": 0,
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
       "import/no-unresolved": [
         2,
         {
@@ -108,7 +122,8 @@
             "atom"
           ]
         }
-      ]
+      ],
+      "react/jsx-filename-extension": [1, { "extensions": [".js"] }]
     }
   }
 }
