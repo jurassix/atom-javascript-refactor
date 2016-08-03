@@ -1,7 +1,7 @@
 # atom-javascript-refactor package
 
 [![Build Status](https://travis-ci.org/jurassix/atom-javascript-refactor.svg?branch=master)](https://travis-ci.org/jurassix/atom-javascript-refactor)
-[![Coverage Status](https://coveralls.io/repos/github/jurassix/atom-javascript-refactor/badge.svg?branch=master)](https://coveralls.io/github/jurassix/atom-javascript-refactor?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/jurassix/atom-javascript-refactor/badge.svg)](https://coveralls.io/github/jurassix/atom-javascript-refactor)
 [![Dependency Status](https://david-dm.org/jurassix/atom-javascript-refactor.svg)](https://david-dm.org/jurassix/atom-javascript-refactor)
 [![devDependency Status](https://david-dm.org/jurassix/atom-javascript-refactor/dev-status.svg)](https://david-dm.org/jurassix/atom-javascript-refactor#info=devDependencies)
 
