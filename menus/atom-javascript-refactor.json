@@ -3,7 +3,7 @@
     ".tree-view .file, .tree-view .directory": [
       {
         "label": "Rename (with refactor support)",
-        "command": "atom-refactoring-codemods:refactor"
+        "command": "atom-javascript-refactor:refactor"
       }
     ]
   }

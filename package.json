@@ -1,6 +1,6 @@
 {
   "name": "javascript-refactor",
-  "main": "./lib/atom-refactoring-codemods",
+  "main": "./lib/atom-javascript-refactor",
   "version": "0.5.3",
   "description": "JavaScript refactoring support for Atom",
   "keywords": [
@@ -11,7 +11,7 @@
     "ide"
   ],
   "activationCommands": {
-    "atom-workspace": "atom-refactoring-codemods:refactor"
+    "atom-workspace": "atom-javascript-refactor:refactor"
   },
   "consumedServices": {
     "status-bar": {

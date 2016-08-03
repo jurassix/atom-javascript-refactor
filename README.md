@@ -1,15 +1,15 @@
-# atom-refactoring-codemods package
+# atom-javascript-refactor package
 
-[![Build Status](https://travis-ci.org/jurassix/atom-refactoring-codemods.svg?branch=master)](https://travis-ci.org/jurassix/atom-refactoring-codemods)
-[![Coverage Status](https://coveralls.io/repos/github/jurassix/atom-refactoring-codemods/badge.svg?branch=master)](https://coveralls.io/github/jurassix/atom-refactoring-codemods?branch=master)
-[![Dependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods)
-[![devDependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods/dev-status.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods#info=devDependencies)
+[![Build Status](https://travis-ci.org/jurassix/atom-javascript-refactor.svg?branch=master)](https://travis-ci.org/jurassix/atom-javascript-refactor)
+[![Coverage Status](https://coveralls.io/repos/github/jurassix/atom-javascript-refactor/badge.svg?branch=master)](https://coveralls.io/github/jurassix/atom-javascript-refactor?branch=master)
+[![Dependency Status](https://david-dm.org/jurassix/atom-javascript-refactor.svg)](https://david-dm.org/jurassix/atom-javascript-refactor)
+[![devDependency Status](https://david-dm.org/jurassix/atom-javascript-refactor/dev-status.svg)](https://david-dm.org/jurassix/atom-javascript-refactor#info=devDependencies)
 
 ## Atom JavaScript ES6 Module and CommonJS refactoring support
 
-_atom-refactoring-codemods_ simplifies ES6 Module and CommonJS refactoring, by allowing you to rename or move any file within your project and have all references updated automatically.
+_atom-javascript-refactor_ simplifies ES6 Module and CommonJS refactoring, by allowing you to rename or move any file within your project and have all references updated automatically.
 
-_atom-refactoring-codemods_ allows you to rename a file and all Modules referencing that file will be updated too the new path. 
+_atom-javascript-refactor_ allows you to rename a file and all Modules referencing that file will be updated too the new path. 
 
 For example, given the following file:
 
@@ -26,8 +26,8 @@ _src/animals.js_ is transformed to
 ```js
 import cat from './kitten';
 ```
- 
-_atom-refactoring-codemods_ also allows you to move a file causing all the internal Module references _and_ all Modules that reference this file, to be updated too.
+
+_atom-javascript-refactor_ also allows you to move a file causing all the internal Module references _and_ all Modules that reference this file, to be updated too.
 
 For example, given the following files:
 
@@ -65,16 +65,16 @@ _Note: there currently is no support for Drag and Drop._
 
 ### Install
 ```
-apm i atom-refactoring-codemods
+apm i atom-javascript-refactor
 ```
 
 ### Develop
 ```
-> cd atom-refactoring-codemods
+> cd atom-javascript-refactor
 > npm i
 > apm link
 ```
 
 ### Contribute
-- Please open an [issue](https://github.com/jurassix/atom-refactoring-codemods/issues) before submitting a PR
+- Please open an [issue](https://github.com/jurassix/atom-javascript-refactor/issues) before submitting a PR
 - All PR's should be accompanied wth tests :rocket:
