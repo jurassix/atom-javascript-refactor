@@ -5,7 +5,7 @@
 [![Dependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods)
 [![devDependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods/dev-status.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods#info=devDependencies)
 
-## Atom JavaScript Module refactoring support
+## Atom JavaScript ES6 Module and CommonJS refactoring support
 
 _atom-refactoring-codemods_ simplifies ES6 Module and CommonJS refactoring, by allowing you to rename or move any file within your project and have all references updated automatically.
 
@@ -13,53 +13,53 @@ _atom-refactoring-codemods_ allows you to rename a file and all Modules referenc
 
 For example, given the following file:
 
-_src/shot.js_
+_src/animals.js_
 
 ```js
-import bar from './bar';
+import cat from './meow';
 ```
 
-Let's rename the file **/src/bar.js** to **/src/glass.js**.
+Let's rename the file **src/meow.js** to **src/kitten.js**.
 
-_src/shot.js_ is transformed to
+_src/animals.js_ is transformed to
 
 ```js
-import bar from './glass';
+import cat from './kitten';
 ```
  
-_atom-refactoring-codemods_ also allows you to move a file and have all the internal references updated, and all Modules that reference this file will be updated too.
+_atom-refactoring-codemods_ also allows you to move a file causing all the internal Module references _and_ all Modules that reference this file, to be updated too.
 
 For example, given the following files:
 
-_src/bar.js_
+_src/meow.js_
 
 ```js
-import { ORDER } from '../constants';
+import { RAINBOW } from '../constants';
 ```
 
-_src/shot.js_
+_src/animals.js_
 
 ```js
-import bar from './bar';
+import cat from './meow';
 ```
 
-Let's move the file **/src/bar.js** to **/src/locations/bar.js**.
+Let's move the file **src/meow.js** to **src/city-kitty/meow.js**.
 
-_src/bar.js_ is transformed to
+_src/city-kitty/meow.js_ is transformed to
 
 ```js
-import { ORDER } from '../../constants';
+import { RAINBOW } from '../../constants';
 ```
 
-_src/shot.js_ is transformed to
+_src/animals.js_ is transformed to
 
 ```js
-import bar from './locations/bar';
+import cat from './city-kitty/meow';
 ```
 
 #### Usage
 
-Using the TreeView, __Right click__ on any __.js__ file to expose the _Rename (with refactor support)_ option. Selecting this option will open a modal that will allow you to update the file name or path. Pressing _Enter Key_ will apply the file rename/move and then run a [codemod](https://github.com/jurassix/refactoring-codemods) on the root folder.
+Using the TreeView, __Right click__ on any __.js__ file or __directory__ to expose the _Rename (with refactor support)_ option. Selecting this option will open a modal that will allow you to update the file name or path. Pressing _Enter Key_ will apply the file rename/move and then run a [codemod](https://github.com/jurassix/refactoring-codemods) on the root folder.
 
 _Note: there currently is no support for Drag and Drop._
 
