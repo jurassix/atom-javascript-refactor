@@ -5,53 +5,65 @@
 [![Dependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods)
 [![devDependency Status](https://david-dm.org/jurassix/atom-refactoring-codemods/dev-status.svg)](https://david-dm.org/jurassix/atom-refactoring-codemods#info=devDependencies)
 
-## JavaScript refactoring support for Atom
+## Atom JavaScript Module refactoring support
 
-This package allows you to rename a file and have all internal relative imports/requires paths be updated to new location (if moved to a new dir) and all dependent files in your projects imports/requires be updated with your new file path.
+_atom-refactoring-codemods_ allows you to rename a file and all Modules referencing that file will be updated too the new path. 
 
-This Atom package is a work in progress. The goal is to provide refactoring support to Atom, during file rename, file or directory move, and renaming of exported module.
+For example, given the following file:
 
-The UI is a work in progress, all critiques are welcome - please read the _Contribute_ section below if you are interested in making this package better.
+_src/shot.js_
+
+```js
+import bar from './bar';
+```
+
+Let's rename the file **/src/bar.js** to **/src/glass.js**.
+
+_src/shot.js_ is transformed to
+
+```js
+import bar from './glass';
+```
+ 
+This package also allows you to move a file and have all the internal Module references updated, and all Modules that reference this file will update too.
+
+For example, given the following files:
+
+_src/bar.js_
+
+```js
+import { ORDER } from '../constants';
+```
+
+_src/shot.js_
+
+```js
+import bar from './bar';
+```
+
+Let's move the file **/src/bar.js** to **/src/locations/bar.js**.
+
+_src/bar.js_ is transformed to
+
+```js
+import { ORDER } from '../../constants';
+```
+
+_src/shot.js_ is transformed to
+
+```js
+import bar from './locations/bar';
+```
 
 #### Usage
 
-Right click on any .js file to expose the _Rename (with refactor support)_ option. Selecting this option will open a modalPanel that will allow the user to update the file path/name. Pressing _Enter Key_ will apply the file rename/move and then run a codemod on the root folder.
+Using the TreeView, _Right click_ on any __.js__ file to expose the _Rename (with refactor support)_ option. 
 
-#### How it all works
+Selecting this option will open a modal that will allow you to update the file name or path. 
 
-__atom-refactoring-codemods__ is a UI package that executes jscodeshift codemods in memory. I've written 2 [refactoring-codemods](https://github.com/jurassix/refactoring-codemods) that do the heavy lifting of building the AST and updating the sources to match.
+Pressing _Enter Key_ will apply the file rename/move and then run a codemod on the root folder.
 
-__import-declaration-transform__ updates all dependent _import/require_ __paths__ when a file has been renamed/moved. This codemod takes the _previousPath_ and _newPath_ of the file and then all dependent _import/require_ paths will be updated to match the new file name/location.
-
-Example:
-
-```js
-import foo from './bar';
-```
-
- becomes
-
- ```js
-import foo from './new/path/to/bar';
- ```
-
-__import-specifier-transform__ updates all dependent _import/require_ __variables__ when a file export been renamed. This codemod takes the _previousExportName_ and _newExportName_ for a given file and then all dependent _import/require_ variables will be updated to match the new file export name.
-
-Example:
-
-```js
-import foo from './bar';
-
-foo();
-```
-
- becomes
-
- ```js
-import fooPrime from './bar';
-
-fooPrime();
- ```
+__Note: there currently is no support for Drag and Drop.__
 
 ### Install
 ```
