@@ -1,7 +1,7 @@
 {
   "name": "javascript-refactor",
   "main": "./lib/atom-refactoring-codemods",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "JavaScript refactoring support for Atom",
   "keywords": [
     "refactoring",
