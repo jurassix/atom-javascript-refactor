@@ -4,12 +4,11 @@
   "version": "0.5.3",
   "description": "JavaScript refactoring support for Atom",
   "keywords": [
-    "refactoring",
     "refactor",
-    "codemod",
-    "jscodeshift",
-    "js-codemod",
-    "rename"
+    "rename",
+    "move",
+    "javascript",
+    "ide"
   ],
   "activationCommands": {
     "atom-workspace": "atom-refactoring-codemods:refactor"
@@ -23,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jurassix/atom-refactoring-codemods.git"
+    "url": "git+https://github.com/jurassix/atom-javascript-refactor.git"
   },
   "author": "clint ayres <clinton.ayres@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jurassix/atom-refactoring-codemods/issues"
+    "url": "https://github.com/jurassix/atom-javascript-refactor/issues"
   },
-  "homepage": "https://github.com/jurassix/atom-refactoring-codemods#readme",
+  "homepage": "https://github.com/jurassix/atom-javascript-refactor#readme",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
