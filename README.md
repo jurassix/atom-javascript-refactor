@@ -7,6 +7,8 @@
 
 ## Atom JavaScript Module refactoring support
 
+_atom-refactoring-codemods_ simplifies ES6 Module and CommonJS refactoring, by allowing you to rename or move any file within your project and have all references updated automatically.
+
 _atom-refactoring-codemods_ allows you to rename a file and all Modules referencing that file will be updated too the new path. 
 
 For example, given the following file:
@@ -25,7 +27,7 @@ _src/shot.js_ is transformed to
 import bar from './glass';
 ```
  
-This package also allows you to move a file and have all the internal Module references updated, and all Modules that reference this file will update too.
+_atom-refactoring-codemods_ also allows you to move a file and have all the internal references updated, and all Modules that reference this file will be updated too.
 
 For example, given the following files:
 
@@ -57,13 +59,9 @@ import bar from './locations/bar';
 
 #### Usage
 
-Using the TreeView, _Right click_ on any __.js__ file to expose the _Rename (with refactor support)_ option. 
+Using the TreeView, __Right click__ on any __.js__ file to expose the _Rename (with refactor support)_ option. Selecting this option will open a modal that will allow you to update the file name or path. Pressing _Enter Key_ will apply the file rename/move and then run a [codemod](https://github.com/jurassix/refactoring-codemods) on the root folder.
 
-Selecting this option will open a modal that will allow you to update the file name or path. 
-
-Pressing _Enter Key_ will apply the file rename/move and then run a codemod on the root folder.
-
-__Note: there currently is no support for Drag and Drop.__
+_Note: there currently is no support for Drag and Drop._
 
 ### Install
 ```
