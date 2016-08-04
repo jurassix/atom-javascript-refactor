@@ -9,7 +9,7 @@
 
 _atom-javascript-refactor_ simplifies ES6 Module and CommonJS refactoring, by allowing you to rename or move any file within your project and have all references updated automatically.
 
-_atom-javascript-refactor_ allows you to rename a file and all Modules referencing that file will be updated too the new path. 
+_atom-javascript-refactor_ allows you to rename a file, and all referencing Modules will be updated with new path.
 
 For example, given the following file:
 
@@ -27,7 +27,7 @@ _src/animals.js_ is transformed to
 import cat from './kitten';
 ```
 
-_atom-javascript-refactor_ also allows you to move a file causing all the internal Module references _and_ all Modules that reference this file, to be updated too.
+_atom-javascript-refactor_ also updates all locally referenced Modules inside of the moved file.
 
 For example, given the following files:
 
