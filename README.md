@@ -65,7 +65,7 @@ _Note: there currently is no support for Drag and Drop._
 
 ### Install
 ```
-apm i atom-javascript-refactor
+apm i javascript-refactor
 ```
 
 ### Develop
