@@ -24,7 +24,10 @@
     "type": "git",
     "url": "git+https://github.com/jurassix/atom-javascript-refactor.git"
   },
-  "author": "clint ayres <clinton.ayres@gmail.com>",
+  "author": "Clint Ayres <clinton.ayres@gmail.com>",
+  "contributors": [
+    "Andrew Hutchings <andrew.hutchings@gmail.com> (https://andrewhutchings.com)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jurassix/atom-javascript-refactor/issues"
