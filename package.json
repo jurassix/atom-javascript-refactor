@@ -63,7 +63,7 @@
     "eslint-plugin-react": "^6.0.0",
     "flow-bin": "^0.30.0",
     "nuclide": "^0.161.0",
-    "nyc": "^7.0.0"
+    "nyc": "^8.1.0"
   },
   "scripts": {
     "test": "npm run test:flow && npm run test:lint && npm run test:unit",
