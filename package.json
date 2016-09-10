@@ -132,7 +132,8 @@
             ".js"
           ]
         }
-      ]
+      ],
+      "react/require-extension": "off"
     }
   }
 }
