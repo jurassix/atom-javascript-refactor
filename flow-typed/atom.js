@@ -1,4 +1,5 @@
 'use babel';
+
 // @flow
 
 declare class atom$Config {

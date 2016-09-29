@@ -118,10 +118,7 @@
       "import/no-unresolved": [
         2,
         {
-          "commonjs": true,
-          "ignore": [
-            "atom"
-          ]
+          "commonjs": true
         }
       ],
       "react/jsx-filename-extension": [
@@ -133,6 +130,9 @@
         }
       ],
       "react/require-extension": "off"
+    },
+    "settings": {
+      "import/core-modules": ["atom"]
     }
   }
 }
