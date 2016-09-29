@@ -46,7 +46,7 @@
     "refactoring-codemods": "0.3.2"
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.0",
+    "babel-eslint": "^7.0.0",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.11.1",
