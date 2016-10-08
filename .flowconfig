@@ -1,5 +1,8 @@
 [ignore]
 .*node_modules/fbjs.*
+.*node_modules/nuclide/pkg/nuclide-remote-projects.*
+.*node_modules/nuclide/pkg/nuclide-reprint-js.*
+.*node_modules/nuclide/pkg/nuclide-workspace-views.*
 
 [include]
 
