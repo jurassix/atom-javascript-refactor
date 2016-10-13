@@ -39,7 +39,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "core-decorators": "^0.12.3",
-    "fs-plus": "^2.9.1",
+    "fs-plus": "^2.9.3",
     "jscodeshift": "^0.3.20",
     "react-for-atom": "^15.0.2-1",
     "redux": "^3.5.2",
