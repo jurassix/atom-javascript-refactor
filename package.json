@@ -59,7 +59,7 @@
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.3.0",
-    "flow-bin": "^0.33.0",
+    "flow-bin": "^0.34.0",
     "jest": "^16.0.0",
     "nuclide": "^0.177.0"
   },
