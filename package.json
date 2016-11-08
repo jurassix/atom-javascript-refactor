@@ -60,7 +60,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.3.0",
     "flow-bin": "^0.34.0",
-    "jest": "^16.0.0",
+    "jest": "^17.0.0",
     "nuclide": "^0.179.0"
   },
   "scripts": {
