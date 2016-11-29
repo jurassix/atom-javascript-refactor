@@ -61,7 +61,7 @@
     "eslint-plugin-react": "^6.3.0",
     "flow-bin": "^0.36.0",
     "jest": "^17.0.0",
-    "nuclide": "^0.184.0"
+    "nuclide": "^0.186.0"
   },
   "scripts": {
     "test": "npm run test:flow && npm run test:lint && npm run test:unit",
