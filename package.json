@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "core-decorators": "^0.14.0",
+    "core-decorators": "^0.15.0",
     "fs-plus": "^2.9.1",
     "jscodeshift": "^0.3.20",
     "react-for-atom": "^15.0.2-1",
