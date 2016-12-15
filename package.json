@@ -89,7 +89,10 @@
       "browser": true,
       "jest": true
     },
-    "extends": "airbnb",
+    "extends": [
+      "airbnb",
+      "plugin:flowtype/recommended"
+    ],
     "parser": "babel-eslint",
     "globals": {
       "atom": false
@@ -99,36 +102,14 @@
       "flowtype"
     ],
     "rules": {
-      "flowtype/define-flow-type": 1,
-      "flowtype/use-flow-type": 1,
-      "generator-star-spacing": [
-        2,
-        {
-          "before": false,
-          "after": true
-        }
-      ],
-      "import/no-extraneous-dependencies": [
-        "error",
-        {
-          "devDependencies": true
-        }
-      ],
-      "import/no-unresolved": [
-        2,
-        {
-          "commonjs": true
-        }
-      ],
       "react/jsx-filename-extension": [
-        1,
+        "warn",
         {
           "extensions": [
             ".js"
           ]
         }
-      ],
-      "react/require-extension": "off"
+      ]
     },
     "settings": {
       "import/core-modules": [
