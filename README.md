@@ -64,12 +64,12 @@ Using the TreeView, __Right click__ on any __.js__ file or __directory__ to expo
 _Note: there currently is no support for Drag and Drop._
 
 ### Install
-```
+```bash
 apm i javascript-refactor
 ```
 
 ### Develop
-```
+```bash
 > cd atom-javascript-refactor
 > npm i
 > apm link
