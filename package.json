@@ -108,7 +108,8 @@
             ".js"
           ]
         }
-      ]
+      ],
+      "react/sort-comp": "off"
     },
     "settings": {
       "import/core-modules": [
