@@ -58,7 +58,7 @@
     "eslint-plugin-import": "^2.0.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
-    "flow-bin": "^0.44.0",
+    "flow-bin": "^0.44.1",
     "jest": "^19.0.0"
   },
   "scripts": {
