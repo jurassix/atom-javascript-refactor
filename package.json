@@ -59,7 +59,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^7.0.0",
     "flow-bin": "^0.45.0",
-    "jest": "^19.0.0"
+    "jest": "^20.0.0"
   },
   "scripts": {
     "test": "npm run test:flow && npm run test:lint && npm run test:unit",
