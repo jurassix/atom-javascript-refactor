@@ -12,40 +12,42 @@
  * Private Classes
  */
 
-// Octicons v2.1.2. List extracted from the atom-styleguide package.
+// Octicons v4.4.0. List extracted from the atom-styleguide package.
 type atom$Octicon = 'alert' | 'alignment-align' | 'alignment-aligned-to' | 'alignment-unalign' |
   'arrow-down' | 'arrow-left' | 'arrow-right' | 'arrow-small-down' | 'arrow-small-left' |
-  'arrow-small-right' | 'arrow-small-up' | 'arrow-up' | 'beer' | 'book' | 'bookmark' | 'briefcase' |
-  'broadcast' | 'browser' | 'bug' | 'calendar' | 'check' | 'checklist' | 'chevron-down' |
-  'chevron-left' | 'chevron-right' | 'chevron-up' | 'circle-slash' | 'circuit-board' | 'clippy' |
-  'clock' | 'cloud-download' | 'cloud-upload' | 'code' | 'color-mode' | 'comment' | 'comment-add' |
-  'comment-discussion' | 'credit-card' | 'dash' | 'dashboard' | 'database' | 'device-camera' |
-  'device-camera-video' | 'device-desktop' | 'device-mobile' | 'diff' | 'diff-added' |
-  'diff-ignored' | 'diff-modified' | 'diff-removed' | 'diff-renamed' | 'ellipsis' | 'eye' |
-  'eye-unwatch' | 'eye-watch' | 'file-add' | 'file-binary' | 'file-code' | 'file-directory' |
-  'file-directory-create' | 'file-media' | 'file-pdf' | 'file-submodule' |
-  'file-symlink-directory' | 'file-symlink-file' | 'file-text' | 'file-zip' | 'flame' | 'fold' |
-  'gear' | 'gift' | 'gist' | 'gist-fork' | 'gist-new' | 'gist-private' | 'gist-secret' |
-  'git-branch' | 'git-branch-create' | 'git-branch-delete' | 'git-commit' | 'git-compare' |
-  'git-fork-private' | 'git-merge' | 'git-pull-request' | 'git-pull-request-abandoned' | 'globe' |
-  'graph' | 'heart' | 'history' | 'home' | 'horizontal-rule' | 'hourglass' | 'hubot' | 'inbox' |
-  'info' | 'issue-closed' | 'issue-opened' | 'issue-reopened' | 'jersey' | 'jump-down' |
+  'arrow-small-right' | 'arrow-small-up' | 'arrow-up' | 'beaker' | 'beer' | 'bell' | 'bold' |
+  'book' | 'bookmark' | 'briefcase' | 'broadcast' | 'browser' | 'bug' | 'calendar' | 'check' |
+  'checklist' | 'chevron-down' | 'chevron-left' | 'chevron-right' | 'chevron-up' | 'circle-slash' |
+  'circuit-board' | 'clippy' | 'clock' | 'cloud-download' | 'cloud-upload' | 'code' | 'color-mode' |
+  'comment' | 'comment-add' | 'comment-discussion' | 'credit-card' | 'dash' | 'dashboard' |
+  'database' | 'desktop-download' | 'device-camera' | 'device-camera-video' | 'device-desktop' |
+  'device-mobile' | 'diff' | 'diff-added' | 'diff-ignored' | 'diff-modified' | 'diff-removed' |
+  'diff-renamed' | 'ellipses' | 'ellipsis' | 'eye' | 'eye-unwatch' | 'eye-watch' | 'file' |
+  'file-add' | 'file-binary' | 'file-code' | 'file-directory' | 'file-directory-create' |
+  'file-media' | 'file-pdf' | 'file-submodule' | 'file-symlink-directory' | 'file-symlink-file' |
+  'file-text' | 'file-zip' | 'flame' | 'fold' | 'gear' | 'gift' | 'gist' | 'gist-fork' |
+  'gist-new' | 'gist-private' | 'gist-secret' | 'git-branch' | 'git-branch-create' |
+  'git-branch-delete' | 'git-commit' | 'git-compare' | 'git-fork-private' | 'git-merge' |
+  'git-pull-request' | 'git-pull-request-abandoned' | 'globe' | 'grabber' | 'graph' | 'heart' |
+  'history' | 'home' | 'horizontal-rule' | 'hourglass' | 'hubot' | 'inbox' | 'info' |
+  'issue-closed' | 'issue-opened' | 'issue-reopened' | 'italic' | 'jersey' | 'jump-down' |
   'jump-left' | 'jump-right' | 'jump-up' | 'key' | 'keyboard' | 'law' | 'light-bulb' | 'link' |
   'link-external' | 'list-ordered' | 'list-unordered' | 'location' | 'lock' | 'log-in' | 'log-out' |
-  'logo-github' | 'mail' | 'mail-read' | 'mail-reply' | 'mark-github' | 'markdown' | 'megaphone' |
-  'mention' | 'microscope' | 'milestone' | 'mirror' | 'mirror-private' | 'mirror-public' |
-  'mortar-board' | 'move-down' | 'move-left' | 'move-right' | 'move-up' | 'mute' | 'no-newline' |
-  'octoface' | 'organization' | 'package' | 'paintcan' | 'pencil' | 'person' | 'person-add' |
-  'person-follow' | 'pin' | 'playback-fast-forward' | 'playback-pause' | 'playback-play' |
-  'playback-rewind' | 'plug' | 'plus' | 'podium' | 'primitive-dot' | 'primitive-square' | 'pulse' |
-  'puzzle' | 'question' | 'quote' | 'radio-tower' | 'remove-close' | 'repo' | 'repo-clone' |
-  'repo-create' | 'repo-delete' | 'repo-force-push' | 'repo-forked' | 'repo-pull' | 'repo-push' |
-  'repo-sync' | 'rocket' | 'rss' | 'ruby' | 'screen-full' | 'screen-normal' | 'search' |
-  'search-save' | 'server' | 'settings' | 'sign-in' | 'sign-out' | 'split' | 'squirrel' |
-  'star' | 'star-add' | 'star-delete' | 'steps' | 'stop' | 'sync' | 'tag' | 'tag-add' |
-  'tag-remove' | 'telescope' | 'terminal' | 'three-bars' | 'tools' | 'trashcan' | 'triangle-down' |
-  'triangle-left' | 'triangle-right' | 'triangle-up' | 'unfold' | 'unmute' | 'versions' | 'x' |
-  'zap' ;
+  'logo-gist' | 'logo-github' | 'mail' | 'mail-read' | 'mail-reply' | 'mark-github' | 'markdown' |
+  'megaphone' | 'mention' | 'microscope' | 'milestone' | 'mirror' | 'mirror-private' |
+  'mirror-public' | 'mortar-board' | 'move-down' | 'move-left' | 'move-right' | 'move-up' | 'mute' |
+  'no-newline' | 'octoface' | 'organization' | 'package' | 'paintcan' | 'pencil' | 'person' |
+  'person-add' | 'person-follow' | 'pin' | 'playback-fast-forward' | 'playback-pause' |
+  'playback-play' | 'playback-rewind' | 'plug' | 'plus-small' | 'plus' | 'podium' |
+  'primitive-dot' | 'primitive-square' | 'pulse' | 'puzzle' | 'question' | 'quote' | 'radio-tower' |
+  'remove-close' | 'reply' | 'repo' | 'repo-clone' | 'repo-create' | 'repo-delete' |
+  'repo-force-push' | 'repo-forked' | 'repo-pull' | 'repo-push' | 'repo-sync' | 'rocket' | 'rss' |
+  'ruby' | 'screen-full' | 'screen-normal' | 'search' | 'search-save' | 'server' | 'settings' |
+  'shield' | 'sign-in' | 'sign-out' | 'smiley' | 'split' | 'squirrel' | 'star' | 'star-add' |
+  'star-delete' | 'steps' | 'stop' | 'sync' | 'tag' | 'tag-add' | 'tag-remove' | 'tasklist' |
+  'telescope' | 'terminal' | 'text-size' | 'three-bars' | 'thumbsdown' | 'thumbsup' | 'tools' |
+  'trashcan' | 'triangle-down' | 'triangle-left' | 'triangle-right' | 'triangle-up' | 'unfold' |
+  'unmute' | 'unverified' | 'verified' | 'versions' | 'watch' | 'x' | 'zap';
 
 declare class atom$Model {
   destroy(): void,
@@ -82,16 +84,16 @@ declare class atom$CommandRegistry {
     commandNameOrCommands: string | {[commandName: string]: atom$CommandCallback},
     callback?: atom$CommandCallback
   ): IDisposable,
-  dispatch(target: HTMLElement, commandName: string): void,
+  dispatch(target: HTMLElement, commandName: string, detail?: Object): void,
   onDidDispatch(callback: (event: Event) => mixed): IDisposable,
   onWillDispatch(callback: (event: Event) => mixed): IDisposable,
 }
 
 declare class atom$CompositeDisposable {
-  constructor(...disposables: IDisposable[]): void,
+  constructor(...disposables: Array<IDisposable>): void,
   dispose(): void,
 
-  add(disposable: IDisposable): void,
+  add(...disposables: Array<IDisposable>): void,
   remove(disposable: IDisposable): void,
   clear(): void,
 }
@@ -201,13 +203,22 @@ declare class atom$Decoration {
   onDidChangeProperties(
     callback: (event: {oldProperties: Object, newProperties: Object}) => mixed
     ): IDisposable,
+  onDidDestroy(callback: () => mixed): IDisposable,
   getMarker(): atom$Marker,
   getProperties(): Object,
   setProperties(properties: mixed): void,
 }
 
+declare class atom$DisplayMarkerLayer {
+  destroy(): void,
+  clear(): void,
+  isDestroyed(): boolean,
+  markBufferRange(range: atom$Range | atom$RangeLike, options: MarkerOptions): atom$Marker,
+  getMarkers(): Array<atom$Marker>,
+}
+
 declare class atom$Disposable {
-  constructor(disposalAction?: (...args: any[]) => any): void,
+  constructor(disposalAction?: (...args: Array<any>) => any): void,
   dispose(): void,
 }
 
@@ -228,7 +239,8 @@ declare class atom$Gutter {
   destroy(): void,
   decorateMarker(
     marker: atom$Marker,
-    options?: {'class'?: string, item?: Object | HTMLElement}): void,
+    options?: {'class'?: string, item?: Object | HTMLElement},
+  ): atom$Decoration,
   show(): void,
   hide(): void,
   onDidDestroy(callback: () => void): IDisposable,
@@ -254,7 +266,12 @@ declare class atom$Marker {
   }) => void): IDisposable,
   isValid(): boolean,
   isDestroyed(): boolean,
-  onDidDestroy(callback: () => void): IDisposable,
+  onDidDestroy(callback: () => mixed): IDisposable,
+  setBufferRange(
+    range: atom$RangeLike,
+    properties?: {reversed: boolean},
+  ): void,
+  id: number,
 }
 
 declare class atom$ServiceHub {
@@ -265,6 +282,11 @@ declare class atom$ServiceHub {
     callback: (provider: T) => mixed
   ): IDisposable,
 }
+
+type atom$PackageMetadata = {
+  name: string,
+  version: string,
+};
 
 declare class atom$PackageManager {
   // Event Subscription
@@ -303,11 +325,12 @@ declare class atom$PackageManager {
 
   // Accessing available packages
   getAvailablePackageNames(): Array<string>,
+  getAvailablePackageMetadata(): Array<atom$PackageMetadata>,
 
   // (Undocumented.)
   activate(): Promise<any>,
   deactivatePackages(): void,
-  deactivatePackage(name: string): void,
+  deactivatePackage(name: string, suppressSerialization?: boolean): void,
   loadPackage(name: string): void,
   loadPackages(): void,
   serializePackage(pkg: atom$Package): void,
@@ -327,6 +350,17 @@ declare class atom$StyleManager {
 
   // Paths
   getUserStyleSheetPath(): string,
+
+  // (Undocumented.)
+  addStyleSheet(
+    source: string,
+    params: {
+      sourcePath?: string,
+      context?: boolean,
+      priority?: number,
+      skipDeprecatedSelectorsTransformation?: boolean
+    }
+  ): IDisposable,
 }
 
 type atom$PaneSplitParams = {
@@ -373,6 +407,7 @@ declare class atom$Pane {
   onDidRemoveItem(cb: (event: {item: Object, index: number}) => void): IDisposable,
   onWillRemoveItem(cb: (event: {item: Object, index: number}) => void): IDisposable,
   onDidDestroy(cb: () => void): IDisposable,
+  onDidChangeFlexScale(cb: () => void): IDisposable,
   observeActiveItem(cb: (item: ?Object) => void): IDisposable,
 
   // Lifecycle
@@ -399,6 +434,7 @@ declare class atom$Pane {
   removeItem(item: Object, moved: ?boolean): void,
   setActiveItem(item: Object): Object,
   setFlexScale(flexScale: number): number,
+  getContainer(): atom$PaneContainer,
 }
 
 declare type atom$PaneItem = {
@@ -422,6 +458,12 @@ declare class atom$PaneAxis {
 
 // Undocumented class
 declare class atom$PaneContainer {
+  constructor({
+    config: atom$Config,
+    applicationDelegate: atom$applicationDelegate,
+    notificationManager: atom$NotificationManager,
+    deserializerManager: atom$DeserializerManager,
+  }): atom$PaneContainer,
   destroy(): void,
   getActivePane(): atom$Pane,
   getActivePaneItem(): ?Object,
@@ -468,17 +510,16 @@ declare class atom$Point {
   negate(): atom$Point,
 
   // Comparison
-  min(point1: atom$Point, point2: atom$Point): atom$Point,
-  // TODO(t8220399): Change this to: `-1 | 0 | 1`.
-  compare(other: atom$Point): number,
-  isEqual(otherRange: atom$Point | [number, number]): boolean,
-  isLessThan(other: atom$Point): boolean,
-  isLessThanOrEqual(other: atom$Point): boolean,
-  isGreaterThan(other: atom$Point): boolean,
-  isGreaterThanOrEqual(other: atom$Point): boolean,
+  min(point1: atom$PointLike, point2: atom$PointLike): atom$Point,
+  compare(other: atom$PointLike): -1 | 0 | 1,
+  isEqual(otherRange: atom$PointLike): boolean,
+  isLessThan(other: atom$PointLike): boolean,
+  isLessThanOrEqual(other: atom$PointLike): boolean,
+  isGreaterThan(other: atom$PointLike): boolean,
+  isGreaterThanOrEqual(other: atom$PointLike): boolean,
 
   // Operations
-  translate(other: atom$Point | [number, number]): atom$Point,
+  translate(other: atom$PointLike): atom$Point,
 
   // Conversion
   serialize(): Array<number>,
@@ -508,11 +549,13 @@ declare class atom$Range {
   start: atom$Point,
   end: atom$Point,
   isEmpty(): boolean,
-  isEqual(otherRange: atom$Range | [[number, number], [number, number]]): boolean,
+  isEqual(otherRange: atom$RangeLike): boolean,
   containsPoint(point: atom$PointLike, exclusive?: boolean): boolean,
   containsRange(other: atom$Range, exclusive?: boolean): boolean,
   union(other: atom$Range): atom$Range,
   serialize(): Array<Array<number>>,
+  translate(startDelta: atom$PointLike, endDelta?: atom$PointLike): atom$Range,
+  getRowCount(): number,
 }
 
 type RawStatusBarTile = {
@@ -600,7 +643,12 @@ type atom$TooltipsAddOptions = {
   placement?: atom$TooltipsPlacementOption | () => atom$TooltipsPlacementOption,
 };
 
+type atom$Tooltip = {
+  hide(): void;
+};
+
 declare class atom$TooltipManager {
+  tooltips: Map<HTMLElement, atom$Tooltip>;
   add(
     target: HTMLElement,
     options: atom$TooltipsAddOptions,
@@ -624,7 +672,8 @@ type DecorateMarkerParams = {
   onlyNonEmpty?: boolean,
 } | {
   type: 'gutter',
-  class: string,
+  item?: HTMLElement,
+  class?: string,
   onlyHead?: boolean,
   onlyEmpty?: boolean,
   onlyNonEmpty?: boolean,
@@ -703,13 +752,13 @@ declare class atom$TextEditor extends atom$Model {
 
   // Reading Text
   getText(): string,
-  getTextInBufferRange(range: atom$Range | Array<number>): string,
+  getTextInBufferRange(range: atom$RangeLike): string,
   getLineCount(): number,
 
   // Mutating Text
   setText(text: string, options?: InsertTextOptions): void,
   setTextInBufferRange(
-    range: atom$Range,
+    range: atom$Range | Array<atom$Point>,
     text: string,
     options?: {
       normalizeLineEndings?: boolean,
@@ -722,9 +771,14 @@ declare class atom$TextEditor extends atom$Model {
   duplicateLines: () => void,
 
   // History
+  createCheckpoint(): atom$TextBufferCheckpoint,
+  revertToCheckpoint(checkpoint: atom$TextBufferCheckpoint): boolean,
+  transact(fn: () => mixed, _: void): void,
+  transact(groupingInterval: number, fn: () => mixed): void,
+
   // TextEditor Coordinates
   screenPositionForBufferPosition(
-    bufferPosition: Array<number> | atom$Point,
+    bufferPosition: atom$PointLike,
     options?: {
       wrapBeyondNewlines?: boolean,
       wrapAtSoftNewlines?: boolean,
@@ -732,7 +786,7 @@ declare class atom$TextEditor extends atom$Model {
     },
   ): atom$Point,
   bufferPositionForScreenPosition(
-    bufferPosition: Array<number> | atom$Point,
+    screenPosition: atom$PointLike,
     options?: {
       wrapBeyondNewlines?: boolean,
       wrapAtSoftNewlines?: boolean,
@@ -750,14 +804,16 @@ declare class atom$TextEditor extends atom$Model {
   getDecorations(options?: {class?: string, type?: string}): Array<atom$Decoration>,
 
   // Markers
-  markBufferPosition(position: atom$Point | Array<number>, options?: MarkerOptions): atom$Marker,
-  markBufferRange(range: atom$Range | Array<Array<number>>, options?: MarkerOptions): atom$Marker,
-  markScreenRange(range: atom$Range | Array<Array<number>>, options?: MarkerOptions): atom$Marker,
+  getDefaultMarkerLayer(): atom$DisplayMarkerLayer,
+  markBufferPosition(position: atom$PointLike, options?: MarkerOptions): atom$Marker,
+  markBufferRange(range: atom$RangeLike, options?: MarkerOptions): atom$Marker,
+  markScreenRange(range: atom$RangeLike, options?: MarkerOptions): atom$Marker,
+  markScreenPosition(position: atom$PointLike, options?: MarkerOptions): atom$Marker,
 
   // Cursors
   getCursors(): Array<atom$Cursor>,
   setCursorBufferPosition(
-    position: atom$Point | Array<number>,
+    position: atom$PointLike,
     options?: {
       autoscroll?: boolean,
       wrapBeyondNewlines?: boolean,
@@ -839,7 +895,7 @@ declare class atom$TextEditor extends atom$Model {
 
   // Managing Syntax Scopes
   scopeDescriptorForBufferPosition(
-    bufferPosition: atom$Point | [number, number],
+    bufferPosition: atom$PointLike,
   ): atom$ScopeDescriptor,
 
   // Gutter
@@ -849,6 +905,7 @@ declare class atom$TextEditor extends atom$Model {
     visible?: boolean,
   }): atom$Gutter,
   observeGutters(callback: (gutter: atom$Gutter) => void): IDisposable,
+  getGutters(): Array<atom$Gutter>,
   gutterWithName(name: string): ?atom$Gutter,
 
   // Scrolling the TextEditor
@@ -876,6 +933,9 @@ declare class atom$TextEditor extends atom$Model {
   isFoldedAtBufferRow(row: number): boolean,
   getLastBufferRow(): number,
 
+  // Undocumented properties
+  presenter: ?atom$TextEditorPresenter,
+
   // Undocumented Methods
   getDefaultCharWidth(): number,
   getLineHeightInPixels(): number,
@@ -883,6 +943,7 @@ declare class atom$TextEditor extends atom$Model {
   tokenForBufferPosition(position: atom$Point | [?number, ?number]): atom$Token,
   onDidConflict(callback: () => void): IDisposable,
   serialize: () => mixed,
+  foldBufferRowRange(startRow: number, endRow: number): void,
 }
 
 /**
@@ -913,6 +974,7 @@ declare class atom$TextEditorComponent {
 declare class atom$TextEditorPresenter {
   startBlinkingCursors: () => void,
   stopBlinkingCursors(visible: boolean): void,
+  updateLineNumberGutterState(): void,
 }
 
 /**
@@ -933,7 +995,7 @@ declare class atom$TextEditorElement extends HTMLElement {
   getModel(): atom$TextEditor,
   setModel(model: atom$TextEditor): void,
   pixelPositionForBufferPosition(
-    bufferPosition: {row: number, column: number} | Array<number> | atom$Point,
+    bufferPosition: atom$PointLike,
   ): {top: number, left: number},
   pixelPositionForScreenPosition(screenPosition: atom$Point): {
     left: number,
@@ -971,7 +1033,7 @@ declare class atom$ViewRegistry {
   // Methods
   addViewProvider(
     modelConstructor: any,
-    createView?: (...args: any[]) => ?HTMLElement
+    createView?: (...args: Array<any>) => ?HTMLElement
   ): IDisposable,
   getView(textEditor: atom$TextEditor): atom$TextEditorElement,
   getView(notification: atom$Notification): HTMLElement,
@@ -986,6 +1048,7 @@ type atom$WorkspaceAddPanelOptions = {
   item: Object,
   visible?: boolean,
   priority?: number,
+  className?: string,
 };
 
 type atom$TextEditorParams = {
@@ -1090,13 +1153,39 @@ declare class atom$Workspace {
   getModalPanels(): Array<atom$Panel>,
   addModalPanel(options: atom$WorkspaceAddPanelOptions): atom$Panel,
 
+  // Docks. These became available in Atom 1.17.0, so uses should currently be guarded by a null
+  // check. Once we no longer want to support versions less than Atom 1.17 these typedefs can be
+  // changed to non-optional.
+  getLeftDock?: () => atom$Dock,
+  getRightDock?: () => atom$Dock,
+  getBottomDock?: () => atom$Dock,
+  getCenter?: () => atom$WorkspaceCenter,
+
   // Searching and Replacing
 
   destroyActivePaneItemOrEmptyPane(): void,
   destroyActivePaneItem(): void,
+}
 
-  // Undocumented properties
-  paneContainer: atom$PaneContainer,
+declare class atom$AbastractPaneContainer {
+  isVisible(): boolean,
+  show(): void,
+  hide(): void,
+  getActivePane(): atom$Pane,
+  getPanes(): Array<atom$Pane>,
+}
+
+declare class atom$Dock extends atom$AbastractPaneContainer {
+  // This is a woefully incomplete list, items can be added as needed from
+  // https://github.com/atom/atom/blob/master/src/dock.js
+  toggle(): void,
+}
+
+declare class atom$WorkspaceCenter extends atom$AbastractPaneContainer {
+  observeActivePaneItem(callback: atom$PaneItem => mixed): IDisposable;
+  onDidChangeActivePaneItem(callback: (item: mixed) => mixed): IDisposable;
+  // This should be removed soon anyway, it's currently deprecated.
+  paneContainer: Object;
 }
 
 /**
@@ -1127,10 +1216,15 @@ declare class atom$Clipboard {
 declare class atom$ContextMenuManager {
   add(itemsBySelector: {[cssSelector: string]: Array<atom$ContextMenuItem>}): IDisposable,
   itemSets: Array<atom$ContextMenuItemSet>,
+
+  // Undocumented methods
+  showForEvent(event: Event): void,
+  templateForEvent(event: Event): Array<Object>,
 }
 
 declare class atom$ContextMenuItemSet {
   items: Array<atom$ContextMenuItem>,
+  selector: string,
 }
 
 type atom$ContextMenuItem = {
@@ -1160,6 +1254,8 @@ declare class atom$GetEntriesError extends Error {
 }
 
 declare class atom$Directory {
+  constructor(dirname?: string): atom$Directory,
+
   symlink: boolean,
 
   // Construction
@@ -1195,6 +1291,8 @@ declare class atom$Directory {
 }
 
 declare class atom$File {
+  constructor(filePath?: string, symlink?: boolean): atom$File,
+
   symlink: boolean,
 
   // Construction
@@ -1295,7 +1393,7 @@ declare class atom$KeymapManager {
   getKeyBindings(): Array<atom$KeyBinding>,
   findKeyBindings(params: {
     keystrokes?: string,
-    command: string,
+    command?: string,
     target?: HTMLElement,
   }): Array<atom$KeyBinding>,
 
@@ -1332,6 +1430,7 @@ declare class atom$Project {
   // Event Subscription
   onDidChangePaths(callback: (projectPaths: Array<string>) => mixed): IDisposable,
   onDidAddBuffer(callback: (buffer: atom$TextBuffer) => mixed): IDisposable,
+  observeBuffers(callback: (buffer: atom$TextBuffer) => mixed): IDisposable,
 
   // Accessing the git repository
   getRepositories(): Array<?atom$Repository>,
@@ -1343,8 +1442,9 @@ declare class atom$Project {
   setPaths(paths: Array<string>): void,
   removePath(projectPath: string): void,
   getDirectories(): Array<atom$Directory>,
-  relativizePath(): Array<string>, // [projectPath: ?string, relativePath: string]
+  relativizePath(relativizePath?: string): Array<string>, // [projectPath: ?string, relativePath: string]
   relativize(filePath: string): string,
+  contains(path: string): boolean,
 
   // Private API
   findBufferForPath(path: string): ?atom$TextBuffer,
@@ -1375,6 +1475,12 @@ type atom$TextEditEvent = {
 };
 
 declare class atom$TextBuffer {
+  constructor(text?: string): atom$TextBuffer,
+  constructor(params?: {
+    filePath?: string,
+    text?: string,
+  }): atom$TextBuffer,
+
   file: ?atom$File,
 
   // Mixin
@@ -1391,7 +1497,7 @@ declare class atom$TextBuffer {
   onDidChangePath(callback: () => mixed): IDisposable,
   onDidChangeEncoding(callback: () => mixed): IDisposable,
   onWillSave(callback: () => mixed): IDisposable,
-  onDidSave(callback: () => mixed): IDisposable,
+  onDidSave(callback: (event: {path: string}) => mixed): IDisposable,
   onDidDelete(callback: () => mixed): IDisposable,
   onWillReload(callback: () => mixed): IDisposable,
   onDidReload(callback: () => mixed): IDisposable,
@@ -1452,6 +1558,7 @@ declare class atom$TextBuffer {
   getChangesSinceCheckpoint(checkpoint: atom$TextBufferCheckpoint): Array<mixed>,
 
   // Search And Replace
+  scan(regex: RegExp, iterator: TextBufferScanIterator): void,
   scanInRange(regex: RegExp, range: atom$Range, iterator: TextBufferScanIterator): void,
   backwardsScanInRange(regex: RegExp, range: atom$Range, iterator: TextBufferScanIterator): void,
 
@@ -1485,6 +1592,7 @@ declare class atom$TextBuffer {
   destroy(): void,
   isDestroyed(): boolean,
   applyChange: () => void,
+  shouldDestroyOnFileDelete?: () => boolean,
 }
 
 declare class atom$Notification {
@@ -1518,6 +1626,7 @@ declare class atom$NotificationManager {
   onDidAddNotification(callback: (notification: atom$Notification) => void): IDisposable,
 
   // Adding Notifications
+  add(type: string, message: string, options?: atom$NotificationOptions): atom$Notification,
   addSuccess(message: string, options?: atom$NotificationOptions): atom$Notification,
   addInfo(message: string, options?: atom$NotificationOptions): atom$Notification,
   addWarning(message: string, options?: atom$NotificationOptions): atom$Notification,
@@ -1639,6 +1748,8 @@ type RepositoryLineDiff = {
 //
 // [1]: https://github.com/atom/atom/blob/v1.7.3/src/git-repository.coffee
 declare class atom$Repository {
+  constructor(path: string, options?: {refreshOnWindowFocus?: boolean}): void,
+
   // Event Subscription
   onDidChangeStatus: (callback: RepositoryDidChangeStatusCallback) => IDisposable,
   onDidChangeStatuses: (callback: () => mixed) => IDisposable,
@@ -1714,9 +1825,18 @@ type atom$AutocompleteProvider = {
   getSuggestions: (
     request: atom$AutocompleteRequest,
   ) => Promise<?Array<atom$AutocompleteSuggestion>>,
+  onDidInsertSuggestion?: (
+    insertedSuggestion: atom$SuggestionInsertedRequest,
+  ) => void,
   disableForSelector?: string,
   inclusionPriority?: number,
   excludeLowerPriority?: boolean,
+};
+
+type atom$SuggestionInsertedRequest = {
+  editor: atom$TextEditor,
+  triggerPosition: atom$Point,
+  suggestion: atom$AutocompleteSuggestion,
 };
 
 // Undocumented API.
@@ -1726,6 +1846,7 @@ declare class atom$Token {
 }
 
 declare class atom$Selection {
+  clear(): void,
   getText(): string,
   insertText(
     text: string,
