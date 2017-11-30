@@ -1,9 +1,15 @@
 {
   "name": "javascript-refactor",
   "main": "./lib/atom-javascript-refactor",
-  "version": "0.5.13",
+  "version": "0.6.0",
   "description": "JavaScript refactoring support for Atom",
-  "keywords": ["refactor", "rename", "move", "javascript", "ide"],
+  "keywords": [
+    "refactor",
+    "rename",
+    "move",
+    "javascript",
+    "ide"
+  ],
   "activationCommands": {
     "atom-workspace": "atom-javascript-refactor:refactor"
   },
@@ -62,8 +68,14 @@
     "test:unit": "jest --coverage"
   },
   "babel": {
-    "plugins": ["transform-decorators-legacy"],
-    "presets": ["es2015", "stage-0", "react"],
+    "plugins": [
+      "transform-decorators-legacy"
+    ],
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ],
     "env": {
       "development": {
         "sourceMaps": "inline"
@@ -75,23 +87,33 @@
       "browser": true,
       "jest": true
     },
-    "extends": ["airbnb", "plugin:flowtype/recommended"],
+    "extends": [
+      "airbnb",
+      "plugin:flowtype/recommended"
+    ],
     "parser": "babel-eslint",
     "globals": {
       "atom": false
     },
-    "plugins": ["babel", "flowtype"],
+    "plugins": [
+      "babel",
+      "flowtype"
+    ],
     "rules": {
       "react/jsx-filename-extension": [
         "warn",
         {
-          "extensions": [".js"]
+          "extensions": [
+            ".js"
+          ]
         }
       ],
       "react/sort-comp": "off"
     },
     "settings": {
-      "import/core-modules": ["atom"]
+      "import/core-modules": [
+        "atom"
+      ]
     }
   }
 }
