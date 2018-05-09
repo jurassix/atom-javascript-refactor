@@ -1,7 +1,7 @@
 {
   "name": "javascript-refactor",
   "main": "./lib/atom-javascript-refactor",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "JavaScript refactoring support for Atom",
   "keywords": [
     "refactor",
