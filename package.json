@@ -42,7 +42,7 @@
     "jscodeshift": "^0.3.20",
     "react-for-atom": "^15.0.2-1",
     "redux": "^3.5.2",
-    "refactoring-codemods": "0.3.3"
+    "refactoring-codemods": "0.3.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",
